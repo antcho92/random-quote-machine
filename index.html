@@ -1,63 +1,43 @@
 <!DOCTYPE html>
 <html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Random Quote Machine (FreeCodeCamp)</title>
-    
-    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
-
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
-  </head>
-
-  <body>
-
-    <!-- Need to change the quotes to be pulled from an API -->
-
 <head>
-  <title>Random quote machine</title>
+	<meta charset="UTF-8">
+	<title>Random Quote Machine (FreeCodeCamp)</title>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src="js/index.js"></script>
 </head>
 
+
 <body>
-  <div class="text-center container-fluid">
-    <h1>Random Quote Machine</h1>
-  </div>
-  <div class="text-center container-fluid">
-    <!-- Quote division. I want the quote to be in a division with box -->
-    <div class="well well-lg">
-      <div>
-        <i class="fa fa-quote-left"></i>
-        <span id="quote">This is a random quote generator made using an array of quotes</span>
-        <i class="fa fa-quote-right"></i>
-      </div>
-      <div>
-        <span>-</span>
-        <span id="author">The quote author should appear here.</span>
-      </div>
-    </div>
-    <!-- This is the button that gets a random quote -->
-    <div>
-      <button class="btn btn-lg btn-primary" text="Random Quote" id="newQuote">Random Quote
-      </button>
-      <button class="btn btn-lg btn-default" title="Tweet this quote" id='twitter-share-button'>
-          <i class="fa fa-twitter"></i>
-      </button>
-    </div>
-  </div>
+	<div class="text-center container-fluid">
+		<h1>Random Quote Machine</h1>
+	</div>
+	<div class="text-center container-fluid">
+		<!-- Quote division. I want the quote to be in a division with box -->
+		<div class="well well-lg">
+			<div>
+				<i class="fa fa-quote-left"></i>
+				<span id="quote">This is a random quote generator made using an array of quotes</span>
+				<i class="fa fa-quote-right"></i>
+			</div>
+			<div>
+				<span>-</span>
+				<span id="author">The quote author should appear here.</span>
+			</div>
+		</div>
+		<!-- This is the button that gets a random quote -->
+		<div>
+			<button class="btn btn-lg btn-primary" text="Random Quote" id="newQuote">Random Quote
+			</button>
+			<button class="btn btn-lg btn-default" title="Tweet this quote" id='twitter-share-button'>
+				<i class="fa fa-twitter"></i>
+			</button>
+		</div>
+	</div>
 </body>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
-        <script src="js/index.js"></script>
-
-    
-    
-    
-  </body>
 </html>
