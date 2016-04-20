@@ -25,15 +25,31 @@ $(document).ready(function() {
 	
 	$('#newQuote').on('click', function(e) {
 		e.preventDefault();
-		$.ajax( {
+		$.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", function(data) {
+			post = data.shift(); 
+			$('#author').text(post.title);
+			$('#quote').html(post.content);
+		});
+	});	
+	
+	
+	
+	/*$('#newQuote').on('click', function(e) {
+		e.preventDefault();
+		$.ajax({
 			url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?',
 			dataType: 'jsonp',
 			success: function(data) {
 			post = data.shift(); // The data is an array of objects. Grab the first one.
 			$('#author').text(post.title);
 			$('#quote').html(post.content);
+			},
+			timeout: 5000,
+			error: function(jqXHR, textStatus, errorThrown) {
+				if (textStatus == "timeout")
+				    $("#quote").html("Timeout occurred");
 			}
 		});
-	});
+	});*/
   $('#twitter-share-button').on('click', tweet)
 });
